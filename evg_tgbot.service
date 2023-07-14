@@ -1,0 +1,13 @@
+[Unit]
+Description=Evg Telegram Bot
+After=network.target
+
+[Service]
+User=evg
+Group=evg
+WorkingDirectory=/home/evg/VIKTORPORNEPLOD/
+Environment="PYTHONPATH=/home/evg/VIKTORPORNEPLOD/"
+ExecStart=/home/evg/VIKTORPORNEPLOD/.venv/bin/python /home/evg/VIKTORPORNEPLOD/main.py
+
+[Install]
+WantedBy=multi-user.target
